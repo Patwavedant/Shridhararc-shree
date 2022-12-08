@@ -320,35 +320,35 @@ function validate() {
     <div class="row g-0">
         <div class="col-lg-6 py-6 px-5">
             <h1 class="display-5 mb-4">Contact For Any Queries</h1>
-            <form>
+            <form action="mailto:patwavedant@gmail.com" method="post" enctype="text/plain">
                 <div class="row g-3">
                     <div class="col-6">
                         <div class="form-floating">
-                            <input type="text" class="form-control nameval" name="name" id="form-floating-1" placeholder="John Doe" onkeydown="return alphaOnly(event);" required>
+                            <input type="text" class="form-control nameval" name="Name" id="form-floating-1" placeholder="John Doe" onkeydown="return alphaOnly(event);" required>
                             <label for="form-floating-1">Full Name</label>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-floating">
-                            <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com" onblur="validateEmail(this);" required>
+                            <input type="email" class="form-control" id="form-floating-2" name="Email" placeholder="name@example.com" onblur="validateEmail(this);" required>
                             <label for="form-floating-2">Email address</label>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="form-floating-3" placeholder="Phone Number" onkeypress="return isNumber(event)" required>
+                            <input type="text" class="form-control" id="form-floating-3" name="Phone" placeholder="Phone Number" onkeypress="return isNumber(event)" required>
                             <label for="form-floating-3">Phone Number</label>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="form-floating-3" placeholder="Subject" required>
+                            <input type="text" class="form-control" id="form-floating-3" name="Subject" placeholder="Subject" required>
                             <label for="form-floating-3">Subject</label>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Message" id="form-floating-4" style="height: 150px" onkeypress="allowAlphaNumericSpace(event)"></textarea>
+                            <textarea class="form-control" placeholder="Message" id="form-floating-4" name="Msg" style="height: 150px" onkeypress="allowAlphaNumericSpace(event)"></textarea>
                             <label for="form-floating-4">Message</label>
                           </div>
                     </div>
